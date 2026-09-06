@@ -1,5 +1,5 @@
 // ==========================================
-// 1. Translations Dictionary (EN / AR)
+// 1. Translations (EN / AR)
 // ==========================================
 const translations = {
   en: {
@@ -9,30 +9,31 @@ const translations = {
     nav_edu: "Education",
     nav_resume: "Resume",
     lang_btn: "عربي",
-    
-    hero_tag: "Computer Science — Arab Open University",
+
     hero_title: 'Turning raw data into <em>meaningful</em> narratives.',
-    hero_desc: "Hi, I'm <strong>Malak Mohsen</strong>. I combine rigorous algorithmic foundations with practical data analytics, exploring machine learning models, database systems, and intelligent software applications.",
+    hero_desc: "Hi, I'm <strong>Malak Mohsen</strong>. I combine rigorous algorithmic foundations with practical software design, exploring database architecture, modern AI models, and scalable systems.",
     btn_resume: "View Resume",
     btn_wa: "WhatsApp",
-    
+
     about_badge: "Core Narrative",
     about_lede: "A CS student combining analytical precision with modern computational design.",
     about_p1: "My coursework at the Arab Open University and industry training programs have grounded me in structured problem solving, database systems, and exploratory data analysis.",
     about_p2: "From designing efficient algorithms and structuring robust data representations to uncovering hidden insights and applying modern AI models, I focus on turning complex requirements into clean, impactful solutions.",
-    
-    skills_badge: "Toolkit & Academics",
-    skills_title: "Technical Foundations",
-    cat_cs: "Core Computer Science",
+
+    skills_badge: "Toolkit",
+    skills_title: "Technical Skills",
+    cat_cs: "Computer Science Fundamentals",
     skill_ds: "Data Structures",
     skill_algo: "Algorithms",
     skill_ps: "Problem Solving",
+    skill_sd: "Software Design",
     cat_lang: "Programming Languages",
-    cat_web: "Web Technologies",
-    cat_data: "Data & AI Intelligence",
+    cat_db: "Databases & Cloud",
+    cat_tools: "Web & Intelligence Tools",
+    skill_responsive: "Responsive UI",
     skill_analytics: "Data Analytics",
-    skill_ai: "Modern & Generative AI",
-    
+    skill_ai: "Modern AI",
+
     certs_badge: "Credentials",
     certs_title: "Verified Training & Industry Programs",
     domain_ds: "Data Science",
@@ -43,13 +44,13 @@ const translations = {
     cert_cib_desc: "Intensive financial-technology program focusing on enterprise digital banking architecture and LLM applications.",
     domain_banking: "Banking Controls",
     cert_ttl_desc: "Foundational compliance pipelines, internal security protocols, and operational workflows across contemporary institutions.",
-    
+
     edu_badge: "Academics",
     edu_time: "2023 — Present",
     edu_degree: "B.Sc. in Computer Science",
     edu_school: "Arab Open University — Egypt",
     edu_desc: "Rigorous curriculum encompassing Data Structures, Algorithm Analysis, Software Engineering, Object-Oriented Design, and Database Architecture.",
-    
+
     contact_title: "Let's build something together",
     contact_desc: "Open for discussions, software projects, or data analytics opportunities.",
     form_name_lbl: "Your Name",
@@ -62,7 +63,7 @@ const translations = {
     contact_or: "or reach out directly",
     btn_download_cv: "Resume",
     footer_copy: "Designed with care for Malak Mohsen © 2026",
-    
+
     msg_sending: "Sending message...",
     msg_success: "Thank you! Your message has been sent successfully.",
     msg_err: "Oops! Something went wrong. Please try again."
@@ -74,30 +75,31 @@ const translations = {
     nav_edu: "التعليم",
     nav_resume: "السيرة الذاتية",
     lang_btn: "English",
-    
-    hero_tag: "علوم الحاسب — الجامعة العربية المفتوحة",
+
     hero_title: 'تحويل البيانات المجردة إلى <em>رؤى وإنجازات</em> ملموسة.',
-    hero_desc: "أهلاً، أنا <strong>ملك محسن</strong>. أجمع بين دراسة الخوارزميات وتحليل البيانات التطبيقي، مع شغف كبير بالذكاء الاصطناعي الحديث وقواعد البيانات وهندسة البرمجيات.",
+    hero_desc: "أهلاً، أنا <strong>ملك محسن</strong>. أجمع بين دراسة الخوارزميات وتحليل البيانات وهندسة البرمجيات، مع اهتمام بالذكاء الاصطناعي وتصميم قواعد البيانات وبناء الأنظمة القابلة للتوسع.",
     btn_resume: "عرض الـ CV",
     btn_wa: "تواصل واتساب",
-    
+
     about_badge: "نبذة عني",
     about_lede: "طالبة علوم حاسب تجمع بين الدقة التحليلية والتفكير البرمجي المنظم.",
     about_p1: "من خلال دراستي في الجامعة العربية المفتوحة والتدريبات التقنية المكثفة، اكتسبت أساساً متيناً في حل المشكلات البرمجية، تصميم قواعد البيانات، والتحليل الاستكشافي للبيانات.",
     about_p2: "أسعى دائماً لتحويل المسائل المعقدة إلى حلول برمجية بسيطة، وبناء نماذج تحليلية ذكية تخدم أهداف العمل وتصنع فارقاً حقيقياً.",
-    
-    skills_badge: "الأدوات والمهارات",
-    skills_title: "الأساسيات التقنية",
+
+    skills_badge: "المهارات والتقنيات",
+    skills_title: "المهارات التقنية",
     cat_cs: "أساسيات علوم الحاسب",
     skill_ds: "هياكل البيانات (Data Structures)",
     skill_algo: "الخوارزميات (Algorithms)",
     skill_ps: "حل المشكلات (Problem Solving)",
+    skill_sd: "تصميم البرمجيات (Software Design)",
     cat_lang: "لغات البرمجة",
-    cat_web: "تقنيات الويب",
-    cat_data: "البيانات والذكاء الاصطناعي",
-    skill_analytics: "تحليل البيانات (Data Analytics)",
-    skill_ai: "الذكاء الاصطناعي التوليدي",
-    
+    cat_db: "قواعد البيانات والسحابة",
+    cat_tools: "أدوات الويب والذكاء الاصطناعي",
+    skill_responsive: "واجهات متجاوبة (Responsive UI)",
+    skill_analytics: "تحليل البيانات",
+    skill_ai: "الذكاء الاصطناعي الحديث",
+
     certs_badge: "الشهادات والاعتمادات",
     certs_title: "التدريبات والشهادات المعتمدة",
     domain_ds: "علوم البيانات",
@@ -108,13 +110,13 @@ const translations = {
     cert_cib_desc: "تدريب صيفي مكثف يركز على تطبيقات الذكاء الاصطناعي التوليدي في العمل المصرفي الرقمي.",
     domain_banking: "الرقابة المصرفية",
     cert_ttl_desc: "دراسة شاملة للبنية الرقمية للبنوك وإدارة المخاطر والرقابة الداخلية وأنظمة الامتثال.",
-    
+
     edu_badge: "المسار الأكاديمي",
     edu_time: "2023 — حتى الآن",
     edu_degree: "بكالوريوس علوم الحاسب (Computer Science)",
     edu_school: "الجامعة العربية المفتوحة — مصر",
     edu_desc: "دراسة متعمقة تشمل هياكل البيانات، تحليل الخوارزميات، البرمجة كائنية التوجه (OOP)، وهندسة البرمجيات.",
-    
+
     contact_title: "لنصنع شيئاً مميزاً معاً",
     contact_desc: "مستعدة دائماً لمناقشة المشاريع البرمجية وفرص تحليل البيانات والتعاون التقني.",
     form_name_lbl: "الاسم",
@@ -127,7 +129,7 @@ const translations = {
     contact_or: "أو تواصل مباشرة عبر",
     btn_download_cv: "تحميل السيرة الذاتية",
     footer_copy: "صُمم بكل تقدير لـ ملك محسن © 2026",
-    
+
     msg_sending: "جاري الإرسال...",
     msg_success: "شكراً لك! تم إرسال رسالتك بنجاح.",
     msg_err: "حدث خطأ أثناء الإرسال، برجاء المحاولة مرة أخرى."
@@ -135,7 +137,7 @@ const translations = {
 };
 
 // ==========================================
-// 2. Language Switcher Logic
+// 2. Language Engine
 // ==========================================
 let currentLang = localStorage.getItem('site_lang') || 'en';
 
@@ -143,7 +145,7 @@ function applyLanguage(lang) {
   const html = document.documentElement;
   html.setAttribute('lang', lang);
   html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-  
+
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
@@ -162,7 +164,7 @@ function applyLanguage(lang) {
   if (langLabel) {
     langLabel.textContent = translations[lang].lang_btn;
   }
-  
+
   localStorage.setItem('site_lang', lang);
   currentLang = lang;
 }
@@ -170,14 +172,13 @@ function applyLanguage(lang) {
 const langToggle = document.getElementById('langToggle');
 if (langToggle) {
   langToggle.addEventListener('click', () => {
-    const nextLang = currentLang === 'en' ? 'ar' : 'en';
-    applyLanguage(nextLang);
+    applyLanguage(currentLang === 'en' ? 'ar' : 'en');
   });
 }
 applyLanguage(currentLang);
 
 // ==========================================
-// 3. Theme Switcher Logic (Dark / Light)
+// 3. Theme Engine
 // ==========================================
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
@@ -187,83 +188,25 @@ function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('site_theme', theme);
   currentTheme = theme;
-  
+
   if (themeIcon) {
-    if (theme === 'light') {
-      themeIcon.className = 'fa-regular fa-moon';
-      themeToggle.title = 'Switch to Dark Mode';
-    } else {
-      themeIcon.className = 'fa-regular fa-sun';
-      themeToggle.title = 'Switch to Light Mode';
-    }
+    themeIcon.className = theme === 'light' ? 'fa-regular fa-moon' : 'fa-regular fa-sun';
   }
 }
 
 if (themeToggle) {
   themeToggle.addEventListener('click', () => {
-    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(nextTheme);
+    applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
   });
 }
 applyTheme(currentTheme);
 
 // ==========================================
-// 4. Formspree AJAX Submission
+// 4. Mobile Menu
 // ==========================================
-const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const btn = contactForm.querySelector('.form-submit-btn');
-    const originalBtnHTML = btn.innerHTML;
-    
-    btn.disabled = true;
-    formStatus.className = 'form-status';
-    formStatus.textContent = translations[currentLang].msg_sending;
-
-    try {
-      const response = await fetch(contactForm.action, {
-        method: 'POST',
-        body: new FormData(contactForm),
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (response.ok) {
-        formStatus.className = 'form-status success';
-        formStatus.textContent = translations[currentLang].msg_success;
-        contactForm.reset();
-      } else {
-        throw new Error();
-      }
-    } catch (err) {
-      formStatus.className = 'form-status error';
-      formStatus.textContent = translations[currentLang].msg_err;
-    } finally {
-      btn.disabled = false;
-      btn.innerHTML = originalBtnHTML;
-    }
-  });
-}
-
-// ==========================================
-// 5. Header Scroll & Mobile Nav
-// ==========================================
-const header = document.getElementById('siteHeader');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 40) {
-    header.style.borderBottomColor = 'var(--border-glass-bright)';
-    header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.3)';
-  } else {
-    header.style.borderBottomColor = 'var(--border-glass)';
-    header.style.boxShadow = 'none';
-  }
-});
-
 const navToggle = document.getElementById('navToggle');
 const navMenu = document.querySelector('.nav-menu');
-if (navToggle) {
+if (navToggle && navMenu) {
   navToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
   navMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => navMenu.classList.remove('open'));
@@ -271,7 +214,7 @@ if (navToggle) {
 }
 
 // ==========================================
-// 6. 3D Tilt Effect on Photo Card & Certs
+// 5. 3D Tilt Engine for Portrait & Cards
 // ==========================================
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -284,7 +227,7 @@ if (!reduceMotion) {
       const rect = heroVisual.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
-      
+
       const rotateX = -(y / (rect.height / 2)) * 14;
       const rotateY = (x / (rect.width / 2)) * 14;
 
@@ -314,7 +257,7 @@ if (!reduceMotion) {
 }
 
 // ==========================================
-// 7. Dynamic Constellation Network
+// 6. Dynamic Constellation Network
 // ==========================================
 const svg = document.getElementById('constellation');
 const nodeLayer = document.getElementById('conNodes');
@@ -347,7 +290,7 @@ if (svg && nodeLayer && lineLayer) {
   const lineEls = nodes.map((n, i) => {
     const next = nodes[(i + 1) % nodes.length];
     const cross = nodes[(i + 3) % nodes.length];
-    
+
     const line1 = document.createElementNS('http://www.w3.org/2000/svg', 'line');
     line1.setAttribute('opacity', '0.28');
     lineLayer.appendChild(line1);
@@ -400,4 +343,44 @@ if (svg && nodeLayer && lineLayer) {
     if (!reduceMotion) requestAnimationFrame(drawFrame);
   }
   drawFrame();
+}
+
+// ==========================================
+// 7. Formspree Submission
+// ==========================================
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = contactForm.querySelector('.form-submit-btn');
+    const originalBtnHTML = btn.innerHTML;
+
+    btn.disabled = true;
+    formStatus.className = 'form-status';
+    formStatus.textContent = translations[currentLang].msg_sending;
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        formStatus.className = 'form-status success';
+        formStatus.textContent = translations[currentLang].msg_success;
+        contactForm.reset();
+      } else {
+        throw new Error();
+      }
+    } catch {
+      formStatus.className = 'form-status error';
+      formStatus.textContent = translations[currentLang].msg_err;
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = originalBtnHTML;
+    }
+  });
 }

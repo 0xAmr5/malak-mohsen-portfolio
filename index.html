@@ -2,27 +2,21 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   
   <title>Malak Mohsen | Software Engineer</title>
   <meta name="title" content="Malak Mohsen | Software Engineer" />
   <meta name="description" content="Portfolio of Malak Mohsen — Computer Science Student specializing in Software Engineering, Data Analytics, and Modern AI." />
   <meta name="theme-color" content="#0D1117" />
 
-  <!-- Open Graph / WhatsApp Preview Meta -->
+  <!-- Social Preview -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://malak-mohsen-portfolio.vercel.app/" />
   <meta property="og:title" content="Malak Mohsen | Software Engineer" />
-  <meta property="og:description" content="Portfolio of Malak Mohsen — Computer Science Student specializing in Software Engineering, Data Analytics, and Modern AI." />
+  <meta property="og:description" content="Explore projects in Software Engineering, Data Analytics, and Modern AI by Malak Mohsen." />
   <meta property="og:image" content="profile.jpg" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Malak Mohsen | Software Engineer" />
-  <meta name="twitter:description" content="Portfolio of Malak Mohsen — Computer Science Student specializing in Software Engineering, Data Analytics, and Modern AI." />
-  <meta name="twitter:image" content="profile.jpg" />
-
-  <!-- High-End 3D Glowing Favicon -->
+  <!-- 3D Glowing Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3CradialGradient id='g' cx='35%25' cy='35%25' r='65%25'%3E%3Cstop offset='0%25' stop-color='%23FCE7E1'/%3E%3Cstop offset='40%25' stop-color='%23E8A598'/%3E%3Cstop offset='80%25' stop-color='%23B85D6C'/%3E%3Cstop offset='100%25' stop-color='%231E1520'/%3E%3C/radialGradient%3E%3Cfilter id='glow'%3E%3CfeDropShadow dx='0' dy='4' stdDeviation='6' flood-color='%23E8A598' flood-opacity='0.45'/%3E%3C/filter%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='44' fill='url(%23g)' filter='url(%23glow)'/%3E%3Ccircle cx='50' cy='50' r='42' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-opacity='0.5'/%3E%3Cpath d='M32 68 V32 L50 50 L68 32 V68' fill='none' stroke='%230D1117' stroke-width='5.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='50' cy='22' r='4' fill='%23FFFFFF'/%3E%3C/svg%3E" />
 
   <link rel="stylesheet" href="style.css" />
@@ -33,10 +27,11 @@
 </head>
 <body>
 
-  <!-- Ambient Light Orbs -->
+  <!-- Background Orbs -->
   <div class="ambient-orb orb-1" aria-hidden="true"></div>
   <div class="ambient-orb orb-2" aria-hidden="true"></div>
 
+  <!-- Header -->
   <header class="header" id="siteHeader">
     <div class="container nav-container">
       <a href="#" class="logo">Malak<span>.</span></a>
@@ -51,9 +46,8 @@
         </a>
       </nav>
 
-      <!-- Controls: Theme & Language Toggle -->
       <div class="header-controls">
-        <button id="langToggle" class="ctrl-btn" title="تغيير اللغة / Change Language" aria-label="Toggle language">
+        <button id="langToggle" class="ctrl-btn" title="Language" aria-label="Toggle language">
           <i class="fa-solid fa-globe"></i>
           <span class="lang-label">عربي</span>
         </button>
@@ -70,10 +64,9 @@
   </header>
 
   <main>
-    <!-- Hero -->
+    <!-- Hero with 3D Constellation -->
     <section class="hero container">
       <div class="hero-copy">
-        <span class="hero-tag" data-i18n="hero_tag">Computer Science &mdash; Arab Open University</span>
         <h1 data-i18n="hero_title">Turning raw data into <em>meaningful</em> narratives.</h1>
         <p class="hero-description" data-i18n="hero_desc">
           Hi, I'm <strong>Malak Mohsen</strong>. I combine rigorous algorithmic foundations with practical software design, exploring database architecture, modern AI models, and scalable systems.
@@ -122,21 +115,22 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section (Requested Toolkit Categories) -->
     <section class="section container" id="skills">
-      <div class="section-badge" data-i18n="skills_badge">Toolkit & Academics</div>
-      <h2 class="section-title" data-i18n="skills_title">Technical Foundations</h2>
+      <div class="section-badge" data-i18n="skills_badge">Toolkit</div>
+      <h2 class="section-title" data-i18n="skills_title">Technical Skills</h2>
       
       <div class="skills-categories">
         
         <!-- Category 1: Computer Science Fundamentals -->
         <div class="skill-category-block">
-          <h3 class="category-heading"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="cat_cs">Core Computer Science</span></h3>
+          <h3 class="category-heading"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="cat_cs">Computer Science Fundamentals</span></h3>
           <div class="skills-grid">
             <div class="skill-card tilt-card"><i class="fa-solid fa-network-wired"></i><span data-i18n="skill_ds">Data Structures</span></div>
             <div class="skill-card tilt-card"><i class="fa-solid fa-gears"></i><span data-i18n="skill_algo">Algorithms</span></div>
-            <div class="skill-card tilt-card"><i class="fa-solid fa-cube"></i><span>OOP & Design</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-cube"></i><span>OOP</span></div>
             <div class="skill-card tilt-card"><i class="fa-solid fa-puzzle-piece"></i><span data-i18n="skill_ps">Problem Solving</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-layer-group"></i><span data-i18n="skill_sd">Software Design</span></div>
           </div>
         </div>
 
@@ -145,29 +139,33 @@
           <h3 class="category-heading"><i class="fa-solid fa-terminal"></i> <span data-i18n="cat_lang">Programming Languages</span></h3>
           <div class="skills-grid">
             <div class="skill-card tilt-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
-            <div class="skill-card tilt-card"><i class="fa-solid fa-code"></i><span>C / C++</span></div>
             <div class="skill-card tilt-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
-            <div class="skill-card tilt-card"><i class="fa-brands fa-php"></i><span>PHP</span></div>
-            <div class="skill-card tilt-card"><i class="fa-solid fa-database"></i><span>SQL & RDBMS</span></div>
-          </div>
-        </div>
-
-        <!-- Category 3: Web Engineering -->
-        <div class="skill-category-block">
-          <h3 class="category-heading"><i class="fa-solid fa-laptop-code"></i> <span data-i18n="cat_web">Web Technologies</span></h3>
-          <div class="skills-grid">
-            <div class="skill-card tilt-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
-            <div class="skill-card tilt-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3 & UI</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-code"></i><span>C / C++</span></div>
             <div class="skill-card tilt-card"><i class="fa-brands fa-js"></i><span>JavaScript (ES6+)</span></div>
+            <div class="skill-card tilt-card"><i class="fa-brands fa-php"></i><span>PHP</span></div>
           </div>
         </div>
 
-        <!-- Category 4: Data & Intelligence -->
+        <!-- Category 3: Databases & Cloud -->
         <div class="skill-category-block">
-          <h3 class="category-heading"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="cat_data">Data & AI Intelligence</span></h3>
+          <h3 class="category-heading"><i class="fa-solid fa-database"></i> <span data-i18n="cat_db">Databases & Cloud</span></h3>
           <div class="skills-grid">
+            <div class="skill-card tilt-card"><i class="fa-solid fa-server"></i><span>SQL & RDBMS</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-leaf"></i><span>MongoDB</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-cloud"></i><span>MongoDB Atlas</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-shield-halved"></i><span>Mongoose ODM</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-cloud-arrow-up"></i><span>Cloudinary</span></div>
+          </div>
+        </div>
+
+        <!-- Category 4: Web & Intelligence Tools -->
+        <div class="skill-category-block">
+          <h3 class="category-heading"><i class="fa-solid fa-laptop-code"></i> <span data-i18n="cat_tools">Web & Intelligence Tools</span></h3>
+          <div class="skills-grid">
+            <div class="skill-card tilt-card"><i class="fa-brands fa-html5"></i><span>HTML5 & CSS3</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-mobile-screen-button"></i><span data-i18n="skill_responsive">Responsive UI</span></div>
             <div class="skill-card tilt-card"><i class="fa-solid fa-chart-line"></i><span data-i18n="skill_analytics">Data Analytics</span></div>
-            <div class="skill-card tilt-card"><i class="fa-solid fa-microchip"></i><span data-i18n="skill_ai">Modern & Generative AI</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-microchip"></i><span data-i18n="skill_ai">Modern AI</span></div>
             <div class="skill-card tilt-card"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
           </div>
         </div>
@@ -225,13 +223,12 @@
       </div>
     </section>
 
-    <!-- Contact & Form Section -->
+    <!-- Contact Section -->
     <section class="section container" id="contact">
       <div class="contact-panel">
         <h2 data-i18n="contact_title">Let's build something together</h2>
         <p data-i18n="contact_desc">Open for discussions, software projects, or data analytics opportunities.</p>
         
-        <!-- Formspree Endpoint -->
         <form class="contact-form" id="contactForm" action="https://formspree.io/f/xljewvgq" method="POST">
           <div class="form-group">
             <label for="name" data-i18n="form_name_lbl">Your Name</label>
