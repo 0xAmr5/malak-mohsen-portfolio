@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Malak Mohsen — Data & Computer Science</title>
+  
+  <title>Malak Mohsen | Software Engineer</title>
+  <meta name="description" content="Portfolio of Malak Mohsen Salah — Computer Science Student specializing in Data Analytics, Modern AI, and Software Engineering." />
+  <meta name="theme-color" content="#0D1117" />
 
-  <!-- Dynamic SVG Favicon (M logo with glow) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E8A598'/%3E%3Cstop offset='50%25' stop-color='%23D47A85'/%3E%3Cstop offset='100%25' stop-color='%23E2B887'/%3E%3C/stop%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230D1117'/%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='url(%23grad)' stroke-width='2' opacity='0.4'/%3E%3Ctext x='32' y='42' font-family='Georgia, serif' font-size='28' font-weight='700' fill='url(%23grad)' text-anchor='middle'%3EM%3C/text%3E%3Ccircle cx='46' cy='20' r='3.5' fill='%23E8A598'/%3E%3C/svg%3E" />
+  <!-- Open Graph Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://malak-mohsen-portfolio.vercel.app/" />
+  <meta property="og:title" content="Malak Mohsen — Data & Computer Science" />
+  <meta property="og:description" content="Explore projects in Data Analytics, Software Development, and modern AI pipelines by Malak Mohsen." />
+  <meta property="og:image" content="profile.jpg" />
+
+  <!-- High-End 3D Glowing Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3CradialGradient id='g' cx='35%25' cy='35%25' r='65%25'%3E%3Cstop offset='0%25' stop-color='%23FCE7E1'/%3E%3Cstop offset='40%25' stop-color='%23E8A598'/%3E%3Cstop offset='80%25' stop-color='%23B85D6C'/%3E%3Cstop offset='100%25' stop-color='%231E1520'/%3E%3C/radialGradient%3E%3Cfilter id='glow'%3E%3CfeDropShadow dx='0' dy='4' stdDeviation='6' flood-color='%23E8A598' flood-opacity='0.45'/%3E%3C/filter%3E%3C/defs%3E%3Ccircle cx='50' cy='50' r='44' fill='url(%23g)' filter='url(%23glow)'/%3E%3Ccircle cx='50' cy='50' r='42' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-opacity='0.5'/%3E%3Cpath d='M32 68 V32 L50 50 L68 32 V68' fill='none' stroke='%230D1117' stroke-width='5.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='50' cy='22' r='4' fill='%23FFFFFF'/%3E%3C/svg%3E" />
 
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
@@ -23,18 +33,32 @@
   <header class="header" id="siteHeader">
     <div class="container nav-container">
       <a href="#" class="logo">Malak<span>.</span></a>
+      
       <nav class="nav-menu">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
-        <a href="mailto:malakmohsen743@gmail.com" class="nav-btn">
-          <i class="fa-regular fa-envelope"></i> malakmohsen743@gmail.com
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#certifications" data-i18n="nav_certs">Certifications</a>
+        <a href="#education" data-i18n="nav_edu">Education</a>
+        <a href="Malak_Mohsen_CV.pdf" target="_blank" class="nav-btn">
+          <i class="fa-regular fa-file-pdf"></i> <span data-i18n="nav_resume">Resume</span>
         </a>
       </nav>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+
+      <!-- Controls: Theme & Language Toggle -->
+      <div class="header-controls">
+        <button id="langToggle" class="ctrl-btn" title="تغيير اللغة / Change Language" aria-label="Toggle language">
+          <i class="fa-solid fa-globe"></i>
+          <span class="lang-label">عربي</span>
+        </button>
+
+        <button id="themeToggle" class="ctrl-btn" title="Toggle theme" aria-label="Toggle theme">
+          <i class="fa-regular fa-sun" id="themeIcon"></i>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -42,19 +66,19 @@
     <!-- Hero -->
     <section class="hero container">
       <div class="hero-copy">
-        <span class="hero-tag">Computer Science &mdash; Arab Open University</span>
-        <h1>Turning raw data into <em>meaningful</em> narratives.</h1>
-        <p class="hero-description">
-          Hi, I'm <strong>Malak Mohsen</strong>. I combine rigorous algorithmic foundations with practical data analytics, exploring machine learning models, database structures, and intelligent software systems.
+        <span class="hero-tag" data-i18n="hero_tag">Computer Science &mdash; Arab Open University</span>
+        <h1 data-i18n="hero_title">Turning raw data into <em>meaningful</em> narratives.</h1>
+        <p class="hero-description" data-i18n="hero_desc">
+          Hi, I'm <strong>Malak Mohsen</strong>. I combine rigorous algorithmic foundations with practical data analytics, exploring machine learning models, database systems, and intelligent software applications.
         </p>
         <div class="hero-actions">
-          <a href="https://wa.me/201012006904" target="_blank" class="btn btn-primary">
-            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          <a href="Malak_Mohsen_CV.pdf" target="_blank" class="btn btn-primary">
+            <i class="fa-regular fa-file-pdf"></i> <span data-i18n="btn_resume">View Resume</span>
           </a>
-          <a href="mailto:malakmohsen743@gmail.com" class="btn btn-secondary">
-            <i class="fa-regular fa-envelope"></i> Send Email
+          <a href="https://wa.me/201012006904" target="_blank" class="btn btn-secondary">
+            <i class="fa-brands fa-whatsapp"></i> <span data-i18n="btn_wa">WhatsApp</span>
           </a>
-          <a href="https://www.linkedin.com/in/malak-mohsen-7a4b99358" target="_blank" class="btn btn-outline">
+          <a href="https://www.linkedin.com/in/malak-mohsen-x1" target="_blank" class="btn btn-outline">
             <i class="fa-brands fa-linkedin-in"></i> LinkedIn
           </a>
         </div>
@@ -75,43 +99,43 @@
 
     <!-- About -->
     <section class="section container" id="about">
-      <div class="section-badge">Core Narrative</div>
+      <div class="section-badge" data-i18n="about_badge">Core Narrative</div>
       <div class="about-grid">
-        <h2 class="about-lede">
+        <h2 class="about-lede" data-i18n="about_lede">
           A CS student combining analytical precision with modern computational design.
         </h2>
         <div class="about-body">
-          <p>
-            My coursework at the Arab Open University and industry training programs have grounded me in structured problem solving, database systems, and exploratory data analysis. 
+          <p data-i18n="about_p1">
+            My coursework at the Arab Open University and industry training programs have grounded me in structured problem solving, database systems, and exploratory data analysis.
           </p>
-          <p>
-            From writing clean algorithms and structuring complex data representations to uncovering patterns and applying modern AI models, I enjoy translating abstract requirements into efficient, well-crafted solutions.
+          <p data-i18n="about_p2">
+            From designing efficient algorithms and structuring robust data representations to uncovering hidden insights and applying modern AI models, I focus on turning complex requirements into clean, impactful solutions.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Skills Section (Categorized & Structured) -->
+    <!-- Skills Section -->
     <section class="section container" id="skills">
-      <div class="section-badge">Toolkit & Academics</div>
-      <h2 class="section-title">Technical Foundations</h2>
+      <div class="section-badge" data-i18n="skills_badge">Toolkit & Academics</div>
+      <h2 class="section-title" data-i18n="skills_title">Technical Foundations</h2>
       
       <div class="skills-categories">
         
         <!-- Category 1: Computer Science Fundamentals -->
         <div class="skill-category-block">
-          <h3 class="category-heading"><i class="fa-solid fa-diagram-project"></i> Core Computer Science</h3>
+          <h3 class="category-heading"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="cat_cs">Core Computer Science</span></h3>
           <div class="skills-grid">
-            <div class="skill-card tilt-card"><i class="fa-solid fa-network-wired"></i><span>Data Structures</span></div>
-            <div class="skill-card tilt-card"><i class="fa-solid fa-gears"></i><span>Algorithms</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-network-wired"></i><span data-i18n="skill_ds">Data Structures</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-gears"></i><span data-i18n="skill_algo">Algorithms</span></div>
             <div class="skill-card tilt-card"><i class="fa-solid fa-cube"></i><span>OOP & Design</span></div>
-            <div class="skill-card tilt-card"><i class="fa-solid fa-puzzle-piece"></i><span>Problem Solving</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-puzzle-piece"></i><span data-i18n="skill_ps">Problem Solving</span></div>
           </div>
         </div>
 
-        <!-- Category 2: Programming & Backend -->
+        <!-- Category 2: Programming Languages -->
         <div class="skill-category-block">
-          <h3 class="category-heading"><i class="fa-solid fa-terminal"></i> Programming Languages</h3>
+          <h3 class="category-heading"><i class="fa-solid fa-terminal"></i> <span data-i18n="cat_lang">Programming Languages</span></h3>
           <div class="skills-grid">
             <div class="skill-card tilt-card"><i class="fa-brands fa-python"></i><span>Python</span></div>
             <div class="skill-card tilt-card"><i class="fa-solid fa-code"></i><span>C / C++</span></div>
@@ -123,20 +147,20 @@
 
         <!-- Category 3: Web Engineering -->
         <div class="skill-category-block">
-          <h3 class="category-heading"><i class="fa-solid fa-laptop-code"></i> Web Technologies</h3>
+          <h3 class="category-heading"><i class="fa-solid fa-laptop-code"></i> <span data-i18n="cat_web">Web Technologies</span></h3>
           <div class="skills-grid">
             <div class="skill-card tilt-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
-            <div class="skill-card tilt-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3 & Modern UI</span></div>
+            <div class="skill-card tilt-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3 & UI</span></div>
             <div class="skill-card tilt-card"><i class="fa-brands fa-js"></i><span>JavaScript (ES6+)</span></div>
           </div>
         </div>
 
         <!-- Category 4: Data & Intelligence -->
         <div class="skill-category-block">
-          <h3 class="category-heading"><i class="fa-solid fa-chart-pie"></i> Data & AI Intelligence</h3>
+          <h3 class="category-heading"><i class="fa-solid fa-chart-pie"></i> <span data-i18n="cat_data">Data & AI Intelligence</span></h3>
           <div class="skills-grid">
-            <div class="skill-card tilt-card"><i class="fa-solid fa-chart-line"></i><span>Data Analytics</span></div>
-            <div class="skill-card tilt-card"><i class="fa-solid fa-microchip"></i><span>Modern & Generative AI</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-chart-line"></i><span data-i18n="skill_analytics">Data Analytics</span></div>
+            <div class="skill-card tilt-card"><i class="fa-solid fa-microchip"></i><span data-i18n="skill_ai">Modern & Generative AI</span></div>
             <div class="skill-card tilt-card"><i class="fa-brands fa-git-alt"></i><span>Git & GitHub</span></div>
           </div>
         </div>
@@ -146,36 +170,36 @@
 
     <!-- Certifications -->
     <section class="section container" id="certifications">
-      <div class="section-badge">Credentials</div>
-      <h2 class="section-title">Verified Training & Industry Programs</h2>
+      <div class="section-badge" data-i18n="certs_badge">Credentials</div>
+      <h2 class="section-title" data-i18n="certs_title">Verified Training & Industry Programs</h2>
       <div class="training-grid">
 
         <div class="training-card tilt-card">
-          <span class="card-domain">Data Science</span>
+          <span class="card-domain" data-i18n="domain_ds">Data Science</span>
           <h3>Data Analytics Essentials</h3>
           <p class="org-label">Cisco Networking Academy</p>
-          <p class="card-desc">Exploratory analysis workflows, statistical hygiene, data wrangling pipelines, and structured relational queries.</p>
+          <p class="card-desc" data-i18n="cert_cisco_desc">Exploratory analysis workflows, statistical hygiene, data wrangling pipelines, and structured relational queries.</p>
         </div>
 
         <div class="training-card tilt-card">
-          <span class="card-domain">Artificial Intelligence</span>
+          <span class="card-domain" data-i18n="domain_ai">Artificial Intelligence</span>
           <h3>Introduction to Modern AI</h3>
           <p class="org-label">Cisco Networking Academy & AOU (TCSC)</p>
-          <p class="card-desc">Architecture and real-world deployment of modern AI systems, prompt frameworks, and open-ended design problems.</p>
+          <p class="card-desc" data-i18n="cert_ai_desc">Architecture and real-world deployment of modern AI systems, prompt frameworks, and open-ended design problems.</p>
         </div>
 
         <div class="training-card tilt-card">
-          <span class="card-domain">FinTech & AI Systems</span>
+          <span class="card-domain" data-i18n="domain_fintech">FinTech & AI Systems</span>
           <h3>Generative AI in Banking</h3>
           <p class="org-label">Commercial International Bank (CIB) Summer Program</p>
-          <p class="card-desc">Intensive financial-technology program focusing on enterprise digital banking architecture and LLM applications.</p>
+          <p class="card-desc" data-i18n="cert_cib_desc">Intensive financial-technology program focusing on enterprise digital banking architecture and LLM applications.</p>
         </div>
 
         <div class="training-card tilt-card">
-          <span class="card-domain">Banking Controls</span>
+          <span class="card-domain" data-i18n="domain_banking">Banking Controls</span>
           <h3>Digital Banking & Internal Controls</h3>
           <p class="org-label">Turning to Learning</p>
-          <p class="card-desc">Foundational compliance pipelines, internal security protocols, and operational workflows across contemporary institutions.</p>
+          <p class="card-desc" data-i18n="cert_ttl_desc">Foundational compliance pipelines, internal security protocols, and operational workflows across contemporary institutions.</p>
         </div>
 
       </div>
@@ -183,22 +207,51 @@
 
     <!-- Education -->
     <section class="section container" id="education">
-      <div class="section-badge">Academics</div>
+      <div class="section-badge" data-i18n="edu_badge">Academics</div>
       <div class="edu-box tilt-card">
-        <div class="edu-time">2023 &mdash; Present</div>
+        <div class="edu-time" data-i18n="edu_time">2023 &mdash; Present</div>
         <div class="edu-content">
-          <h3>B.Sc. in Computer Science</h3>
-          <p class="edu-univ">Arab Open University &mdash; Egypt</p>
-          <p class="edu-text">Rigorous curriculum encompassing Data Structures, Algorithm Analysis, Software Engineering, Object-Oriented Design, and Database Architecture.</p>
+          <h3 data-i18n="edu_degree">B.Sc. in Computer Science</h3>
+          <p class="edu-univ" data-i18n="edu_school">Arab Open University &mdash; Egypt</p>
+          <p class="edu-text" data-i18n="edu_desc">Rigorous curriculum encompassing Data Structures, Algorithm Analysis, Software Engineering, Object-Oriented Design, and Database Architecture.</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact & Form Section -->
     <section class="section container" id="contact">
       <div class="contact-panel">
-        <h2>Let's build something together</h2>
-        <p>Open for discussions, software projects, or data analytics opportunities.</p>
+        <h2 data-i18n="contact_title">Let's build something together</h2>
+        <p data-i18n="contact_desc">Open for discussions, software projects, or data analytics opportunities.</p>
+        
+        <!-- Formspree Endpoint -->
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xljewvgq" method="POST">
+          <div class="form-group">
+            <label for="name" data-i18n="form_name_lbl">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="e.g. John Doe" data-ph-key="ph_name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="form_email_lbl">Your Email</label>
+            <input type="email" id="email" name="email" required placeholder="e.g. john@example.com" data-ph-key="ph_email" />
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="form_msg_lbl">Project Details / Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project or opportunity..." data-ph-key="ph_msg"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit-btn">
+            <i class="fa-regular fa-paper-plane"></i> <span data-i18n="form_btn">Send Message</span>
+          </button>
+          
+          <div id="formStatus" class="form-status"></div>
+        </form>
+
+        <div class="contact-divider">
+          <span data-i18n="contact_or">or reach out directly</span>
+        </div>
+
         <div class="contact-actions">
           <a href="mailto:malakmohsen743@gmail.com" class="contact-chip">
             <i class="fa-regular fa-envelope"></i> malakmohsen743@gmail.com
@@ -206,8 +259,11 @@
           <a href="https://wa.me/201012006904" target="_blank" class="contact-chip">
             <i class="fa-brands fa-whatsapp"></i> +20 101 200 6904
           </a>
-          <a href="https://www.linkedin.com/in/malak-mohsen-7a4b99358" target="_blank" class="contact-chip">
-            <i class="fa-brands fa-linkedin-in"></i> LinkedIn Profile
+          <a href="https://www.linkedin.com/in/malak-mohsen-x1" target="_blank" class="contact-chip">
+            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a href="Malak_Mohsen_CV.pdf" target="_blank" class="contact-chip">
+            <i class="fa-regular fa-file-pdf"></i> <span data-i18n="btn_download_cv">Resume</span>
           </a>
         </div>
       </div>
@@ -216,7 +272,7 @@
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>Designed with care for Malak Mohsen &copy; 2026</p>
+      <p data-i18n="footer_copy">Designed with care for Malak Mohsen &copy; 2026</p>
       <span class="dot-separator"></span>
       <p>Data &bull; Code &bull; Curiosity</p>
     </div>
